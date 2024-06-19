@@ -5,7 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: hsl(0, 0%, 29%);
 }
 header {
   height: 37px;
@@ -44,7 +44,7 @@ header .navbar section {
   display: flex;
 }
 main {
-  background: #fff;
+  background: hsl(0, 0%, 100%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
