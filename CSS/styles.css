@@ -8,6 +8,7 @@ body {
   background-color: #f0f0f0;
 }
 header {
+  height: 37px;
   width: 100%;
   background-color: #333;
   color: white;
@@ -22,7 +23,7 @@ header {
   z-index: 1000;
 }
 header a {
-  color: white;
+  color: rgb(255, 237, 77);
   text-decoration: none;
   margin: 0 15px;
 }
@@ -41,7 +42,7 @@ main {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 60px; /* To avoid overlap with fixed header */
+  margin-top: 101px; /* To avoid overlap with fixed header */
 }
 form {
   display: flex;
@@ -80,4 +81,10 @@ button[type="reset"]:hover {
 }
 #result {
   margin-top: 10px;
+}
+.italic-p {
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 27px;
+  font-weight: lighter;
 }
