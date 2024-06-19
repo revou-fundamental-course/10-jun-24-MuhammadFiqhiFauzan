@@ -112,3 +112,12 @@ footer a {
   color: rgb(255, 237, 77);
   text-decoration: none;
 }
+#calculation-method {
+  margin-top: 10px;
+  font-style: italic;
+}
+img {
+  padding-left: 20px;
+  height: 48px;
+  width: 50px;
+}
