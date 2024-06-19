@@ -3,16 +3,45 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
   background-color: #f0f0f0;
+}
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar section {
+  display: flex;
 }
 main {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 60px; /* To avoid overlap with fixed header */
 }
 form {
   display: flex;

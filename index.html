@@ -3,54 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>konversi suhu</title>
+    <title>Konversi Suhu</title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
   <body>
+    <header class="navbar">
+      <a href="#">Revo U</a>
+      <section>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </section>
+    </header>
     <main>
-        <h1>Konverter Suhu</h1>
-        <form id="converter-form">
-          <label for="temperature">Suhu:</label>
-          <input type="number" id="temperature" name="temperature" required />
-          <label for="unit">Dari:</label>
-          <select id="unit" name="unit" required>
-            <option value="celsius">Celcius</option>
-            <option value="fahrenheit">Fahrenheit</option>
-          </select>
-          <button type="submit">Konversi</button>
-          <button type="reset">Reset</button>
-        </form>
-        <p id="result"></p>
-      </main>
-      <script>
-        document
-          .getElementById("converter-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            const temperature = parseFloat(
-              document.getElementById("temperature").value
-            );
-            const unit = document.getElementById("unit").value;
-            let result;
-            if (unit === "celsius") {
-              result = (temperature * 9) / 5 + 32;
-              document.getElementById(
-                "result"
-              ).textContent = `${temperature}°C adalah ${result.toFixed(2)}°F`;
-            } else if (unit === "fahrenheit") {
-              result = ((temperature - 32) * 5) / 9;
-              document.getElementById(
-                "result"
-              ).textContent = `${temperature}°F adalah ${result.toFixed(2)}°C`;
-            }
-          });
-  
-        document
-          .getElementById("converter-form")
-          .addEventListener("reset", function () {
-            document.getElementById("result").textContent = "";
-          });
-      </script>
-    </body>
+      <h1>Konverter Suhu</h1>
+      <form id="converter-form">
+        <label for="temperature">Suhu:</label>
+        <input type="number" id="temperature" name="temperature" required />
+        <label for="unit">Dari:</label>
+        <select id="unit" name="unit" required>
+          <option value="celsius">Celcius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button type="submit">Konversi</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p id="result"></p>
+    </main>
+    <script>
+      document
+        .getElementById("converter-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const temperature = parseFloat(
+            document.getElementById("temperature").value
+          );
+          const unit = document.getElementById("unit").value;
+          let result;
+          if (unit === "celsius") {
+            result = (temperature * 9) / 5 + 32;
+            document.getElementById(
+              "result"
+            ).textContent = `${temperature}°C adalah ${result.toFixed(2)}°F`;
+          } else if (unit === "fahrenheit") {
+            result = ((temperature - 32) * 5) / 9;
+            document.getElementById(
+              "result"
+            ).textContent = `${temperature}°F adalah ${result.toFixed(2)}°C`;
+          }
+        });
+
+      document
+        .getElementById("converter-form")
+        .addEventListener("reset", function () {
+          document.getElementById("result").textContent = "";
+        });
+    </script>
   </body>
 </html>
