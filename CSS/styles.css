@@ -22,6 +22,12 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
+label {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
 header a {
   color: rgb(255, 237, 77);
   text-decoration: none;
@@ -43,6 +49,7 @@ main {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 101px; /* To avoid overlap with fixed header */
+  margin-bottom: 102px; /* To avoid overlap with fixed footer */
 }
 form {
   display: flex;
@@ -87,4 +94,21 @@ button[type="reset"]:hover {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 27px;
   font-weight: lighter;
+}
+footer {
+  height: 65px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+footer a {
+  color: rgb(255, 237, 77);
+  text-decoration: none;
 }

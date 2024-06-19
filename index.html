@@ -50,34 +50,13 @@
         >(&deg;C)) X 1.8 + 32
       </p>
     </main>
-    <script>
-      document
-        .getElementById("converter-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          const temperature = parseFloat(
-            document.getElementById("temperature").value
-          );
-          const unit = document.getElementById("unit").value;
-          let result;
-          if (unit === "celsius") {
-            result = (temperature * 9) / 5 + 32;
-            document.getElementById(
-              "result"
-            ).textContent = `${temperature}°C adalah ${result.toFixed(2)}°F`;
-          } else if (unit === "fahrenheit") {
-            result = ((temperature - 32) * 5) / 9;
-            document.getElementById(
-              "result"
-            ).textContent = `${temperature}°F adalah ${result.toFixed(2)}°C`;
-          }
-        });
-
-      document
-        .getElementById("converter-form")
-        .addEventListener("reset", function () {
-          document.getElementById("result").textContent = "";
-        });
-    </script>
+    <footer>
+      <a href="#">Revo U</a>
+      <p>
+        &copy; Copyright by <br />
+        Muhammad Fiqhi Fauzan
+      </p>
+    </footer>
+    <script src="JS/script.js"></script>
   </body>
 </html>
